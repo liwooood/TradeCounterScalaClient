@@ -8,7 +8,7 @@ import com.cssweb.trade.common.{Message, Start}
  * Created by chenhf on 2015/1/25.
  */
 class LocalActor extends Actor{
-
+  //akka.tcp://Remote端ActorSystem的名字@Remote端配置的IP:Remote端配置的端口号/user/Remote端的Actor名字
   val remoteActor = context.actorFor("akka.tcp://HelloRemoteSystem@127.0.0.1:5150/user/RemoteActor")
 
   var counter = 0
